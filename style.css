@@ -1,0 +1,62 @@
+/*---------- 
+    Fonts  
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* Univarsal Style  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+}
+
+/* Header  */
+header{
+    margin: 30px 4% 100px;
+    border: 1px solid red;
+}
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    font-size: 24px;
+}
+nav, nav ul, .menu-wrapper{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 14px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #3A3A3A;
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: .5s;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    background-color: #E02C6D;
+    color: white;
+}
+.menu-wrapper .fa-search{
+    margin-right: 30px;
+}
+
+
+/*-------------------------
+    Responsive Navigation  
+---------------------------*/
+/* Mobile device */
+/* @media only screen and (max-width: 688px){
+    .logo h1{
+        font-size: 16px;
+    }
+} */
