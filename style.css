@@ -198,13 +198,157 @@ nav ul li a:hover{
     border: none;
 }
 
+/* Happy Customers */
+.happy-customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.happy-customer h1{
+    margin-bottom: 30px;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.user-img img{
+    width: 25%;
+}
+.user-review p{
+    margin: auto;
+    font-size: 14px;
+    width: 40%;
+    color: #6C6C6C;
+}
+.happy-customer > p{
+    font-size: 80px;
+    position: relative;
+    top: -90px;
+    cursor: pointer;
+    color: grey;
+}
+.happy-customer > p span{
+    font-size: 160px;
+    color: #E02C6D;
+}
+.footer{
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A0826;
+}
+.footer h2{
+    font-size: 20px;
+    color: white;
+}
+.footer p, .footer span{
+    font-size: 12px;
+    color: #D9DBE1;
+}
+.social-links .fab{
+    color: white;
+    font-size: 24px;
+    margin: 16px 8px;
+}
 
-/*-------------------------
-    Responsive Navigation  
----------------------------*/
-/* Mobile device */
-/* @media only screen and (max-width: 688px){
-    .logo h1{
-        font-size: 16px;
+
+
+
+/*-----------------------------------------
+-------------------------------------------
+    Responsive Media query 
+-------------------------------------------
+-------------------------------------------*/
+
+
+/*-------------------------- 
+    Tab device 
+-------------------------------*/
+@media screen and (max-width: 992px){
+    .products {
+        grid-template-columns: repeat(2, 1fr);
     }
-} */
+    .logo h1 {
+        font-size: 18px;
+    }
+    nav ul li {
+        margin-right: 5px;
+    }
+    nav ul li a {
+        padding: 6px 15px;
+        font-size: 13px;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-text p {
+        font-size: 13px;
+    }
+    .brand-logos {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 2em;
+    }
+    .brand-logos img{
+        width: 50%;
+    }
+
+}
+
+
+/*-------------------------- 
+    Mobile device  
+-------------------------------*/
+@media screen and (max-width: 768px){
+    .menu-wrapper{
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 135px;
+    }
+    .menu-wrapper ul{
+        flex-direction: column;
+    }
+    .menu-wrapper ul li{
+        margin: 10px 0;
+    }
+    .top-banner{
+        margin-top: 260px;
+        flex-direction: column-reverse;
+    }
+    .top-banner .banner-text{
+        width: 80%;
+        text-align: center;
+    }
+    .top-banner .banner-img{
+        width: 60%;
+    }
+    .top-banner .banner-text p{
+        width: 100%;
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .featured-product{
+        flex-direction: column-reverse;
+    }
+    .featured-product-text{
+        width: 80%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .featured-product-img{
+        width: 80%;
+    }
+}
